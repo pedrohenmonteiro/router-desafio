@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Produtos.module.css";
 
 const Produtos = () => {
@@ -12,13 +13,17 @@ const Produtos = () => {
 
   if (produtos === null) return null;
   return (
-    <div className={styles.container}>
+    <div className={styles.container + " animeLeft"}>
       {produtos.map((item) => {
         return (
-          <div>
-            <img src={item.fotos[0].src} alt={item.nome} />
-            <h1>{item.nome}</h1>
-          </div>
+          <Link to={`produto/${item.id}`}>
+            <img
+              className={styles.imagem}
+              src={item.fotos[0].src}
+              alt={item.nome}
+            />
+            <h1 className={styles.titulo}>{item.nome}</h1>
+          </Link>
         );
       })}
     </div>

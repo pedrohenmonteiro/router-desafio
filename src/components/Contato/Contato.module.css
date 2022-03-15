@@ -1,0 +1,27 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.titulo {
+  font-family: serif;
+  margin-bottom: 10px;
+}
+
+.lista li {
+  margin: 10px;
+  color: rgb(44, 44, 44);
+  display: flex;
+  align-items: center;
+  font-size: 1.125rem;
+}
+
+.lista li::before {
+  content: "";
+  width: 20px;
+  height: 2px;
+  background: #84e;
+  display: inline-block;
+  margin-right: 4px;
+}

@@ -1,0 +1,43 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.produto {
+  position: relative;
+}
+
+.preco {
+  background: #111;
+  color: #fff;
+  font-size: 1.25rem;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-weight: bold;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.descricao {
+  font-size: 1.25rem;
+  margin: 16px 0;
+  color: #444;
+}
+
+.btn {
+  background: #84e;
+  color: #fff;
+  border: none;
+  width: 100%;
+  padding: 1rem 0;
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: rgb(101, 40, 194);
+}
