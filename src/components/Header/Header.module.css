@@ -1,0 +1,18 @@
+.ul {
+  display: flex;
+  margin: 40px 0;
+  gap: 20px;
+}
+
+.link {
+  padding: 10px 20px;
+  background: #eee;
+  border-radius: 4px;
+  font-size: 1.125rem;
+  font-weight: bold;
+}
+
+:global(.active),
+.link:hover {
+  background: #ddd;
+}
