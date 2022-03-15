@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Head from "../Head/Head";
 import styles from "./Produtos.module.css";
 
 const Produtos = () => {
@@ -14,6 +15,7 @@ const Produtos = () => {
   if (produtos === null) return <div className="loading"></div>;
   return (
     <div className={styles.container + " animeLeft"}>
+      <Head title="Ranek" description="Essa é a página Ranek" />
       {produtos.map((item) => {
         return (
           <Link to={`produto/${item.id}`}>

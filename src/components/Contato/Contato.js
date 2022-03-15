@@ -1,10 +1,12 @@
 import React from "react";
 import styles from "./Contato.module.css";
 import foto from "../../img/contato.jpg";
+import Head from "../Head/Head";
 
 const Contato = () => {
   return (
     <div className={styles.container + " animeLeft"}>
+      <Head title="Ranek | Contato" description="Entre em contato" />
       <img src={foto} alt="Contato" />
 
       <div>

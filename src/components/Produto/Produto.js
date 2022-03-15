@@ -1,5 +1,6 @@
 import React from "react";
 import { useParams } from "react-router";
+import Head from "../Head/Head";
 import styles from "./Produto.module.css";
 
 const Produto = () => {
@@ -19,6 +20,7 @@ const Produto = () => {
   if (produto === null) return <div className="loading"></div>;
   return (
     <div className={styles.container + " animeLeft"}>
+      <Head title={produto.nome} description={produto.descricao} />
       <div className={styles.produto}>
         <img className={styles.imagem} src={produto.fotos[0].src} alt="" />
         <span className={styles.preco}>R$ {produto.preco}</span>
