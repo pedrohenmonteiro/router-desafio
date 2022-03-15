@@ -18,7 +18,7 @@ const Produtos = () => {
       <Head title="Ranek" description="Essa é a página Ranek" />
       {produtos.map((item) => {
         return (
-          <Link to={`produto/${item.id}`}>
+          <Link className={styles.link} to={`produto/${item.id}`}>
             <img
               className={styles.imagem}
               src={item.fotos[0].src}
