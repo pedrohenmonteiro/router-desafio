@@ -16,7 +16,7 @@ const Produto = () => {
     fetchParams(`https://ranekapi.origamid.dev/json/api/produto/${params.id}`);
   }, [params.id]);
 
-  if (produto === null) return null;
+  if (produto === null) return <div className="loading"></div>;
   return (
     <div className={styles.container + " animeLeft"}>
       <div className={styles.produto}>

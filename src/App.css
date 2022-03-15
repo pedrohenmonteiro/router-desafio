@@ -25,6 +25,17 @@ a {
   color: black;
 }
 
+.loading {
+  content: "";
+  width: 40px;
+  height: 40px;
+  border: 10px solid #bbb;
+  border-radius: 50%;
+  border-right-color: transparent;
+  display: block;
+  animation: rotate 0.7s infinite linear;
+}
+
 .animeLeft {
   transform: translateX(-20px);
   opacity: 0;
@@ -35,5 +46,11 @@ a {
   to {
     opacity: initial;
     transform: initial;
+  }
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
   }
 }

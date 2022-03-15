@@ -11,7 +11,7 @@ const Produtos = () => {
       .then((r) => setProdutos(r));
   }, []);
 
-  if (produtos === null) return null;
+  if (produtos === null) return <div className="loading"></div>;
   return (
     <div className={styles.container + " animeLeft"}>
       {produtos.map((item) => {
